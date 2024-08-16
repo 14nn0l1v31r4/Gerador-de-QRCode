@@ -20,8 +20,17 @@
         </div>
         <div v-if="text" class="output" >
             <img :src="newQRCode" alt="QRCode">
-
+            
         </div>
+       
+    <div>
+    <a :href="newQRCode" download="qrcode.png">
+            <button>
+                Baixar QRCode
+            </button>
+        
+        </a>
+    </div>
     </div>
     <script>
         new Vue({
@@ -29,7 +38,7 @@
             data: {
                 title: 'Gerador QRCode',
                 text: 'https://github.com/14nn0l1v31r4',
-                qrcode: new QRious({ size: 300})
+                qrcode: new QRious({ size: 350})
             },
             computed: {
                 newQRCode(){

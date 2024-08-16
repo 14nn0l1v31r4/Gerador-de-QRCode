@@ -11,7 +11,7 @@ body {
     display: flex;
     justify-content: center;
     text-align: center;
-    
+    margin:4em;
     color: #FFF;
     background: linear-gradient(to right, rgb(19, 106, 138), rgb(38, 120, 113));
 }
@@ -19,10 +19,32 @@ body {
 input {
     font-size: 2em;
     margin-bottom: 30px;
+    border-radius: 10px;
+}
+input:hover{
+  background-color: #f5f3f3;
 }
 
 .output {
-    border: 1px solid #222;
-    padding: 30px 15px;
-    background-color: #0006;
+    border: 5px solid #222;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: white;
+}
+
+button{
+  border: 2px solid #222;
+  border-radius: 10px;
+  background-color: white;
+  color:black;
+  margin: 5px;
+  font-size: 1em;
+  box-shadow: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+button:hover{
+  cursor: pointer;
+  background-color: lightblue;
+  color:black;
 }
